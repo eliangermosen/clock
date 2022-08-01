@@ -1,6 +1,7 @@
 :root {
     /** COLOR PALETTE LIGHT MODE**/
     --back-color: #FFFFFF;
+    --number: #000000;
 }
 
 * {
@@ -9,8 +10,36 @@
     box-sizing: border-box;
 }
 
-html{
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
     font-family: 'Space Mono', monospace;
+    background-color: var(--back-color);
+}
+
+h1{
+    /* color: var(--number); */
+    font-size: 14rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container-git{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.container-git svg {
+    width: 40px;
+    cursor: pointer;
+}
+
+.container-git svg path {
+    fill: #000000;
 }
 
 /* 
@@ -21,5 +50,9 @@ Esta propiedad detecta si el usuario prefiere el tema oscuro o no, y nos dice cu
     :root {
         /** COLOR PALETTE DARK MODE**/
         --back-color: #000000;
+        --number: #FFFFFF;
+    }
+    .container-git svg path {
+        fill: #FFFFFF;
     }
 }

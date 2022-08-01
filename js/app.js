@@ -1,7 +1,7 @@
 const $time = document.querySelector("h1");
 
 const currentTime = () =>{
-    
+
     let date = new Date(),
         hour = date.getHours(),
         minute = date.getMinutes(),
