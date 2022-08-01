@@ -20,7 +20,7 @@ body{
 
 h1{
     /* color: var(--number); */
-    font-size: 14rem;
+    font-size: 13rem;
     font-weight: 700;
     background: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
     -webkit-background-clip: text;
@@ -54,5 +54,32 @@ Esta propiedad detecta si el usuario prefiere el tema oscuro o no, y nos dice cu
     }
     .container-git svg path {
         fill: #FFFFFF;
+    }
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1107px) {
+    h1 {
+        font-size: 10rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+/* si la ventana del navegador es 600px o menos se ejecutara esto */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 4rem;
     }
 }
