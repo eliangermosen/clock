@@ -1,0 +1,25 @@
+:root {
+    /** COLOR PALETTE LIGHT MODE**/
+    --back-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Space Mono', monospace;
+}
+
+/* 
+De esta manera se si el usuario tiene activado el tema oscuro en su configuración del sistema.
+Esta propiedad detecta si el usuario prefiere el tema oscuro o no, y nos dice cual theme deberíamos mostrarle.
+*/
+@media (prefers-color-scheme: dark){
+    :root {
+        /** COLOR PALETTE DARK MODE**/
+        --back-color: #000000;
+    }
+}
